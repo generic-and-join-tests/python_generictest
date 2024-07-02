@@ -1,0 +1,11 @@
+<html>
+<body>
+<form action="/submit">
+    Username: <input type="text" name="username">
+    <button type="submit">Submit</button>
+</form>
+<div {{ user_input|xmlattr }}>
+    This is a potentially unsafe div because it uses the user's input to set attributes.
+</div>
+</body>
+</html>
